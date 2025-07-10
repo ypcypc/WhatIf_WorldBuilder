@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "worldbuilder"
+version = "0.1.0"
+description = "WorldBuilder entity pipeline"
+authors = ["AI"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+spacy = "^3.7"
+spacy-xx_ent_wiki_sm = {url="https://github.com/explosion/spacy-models/releases/download/xx_ent_wiki_sm-3.7.0/xx_ent_wiki_sm-3.7.0.tar.gz"}
+hanlp = "^2.1"
+jieba = "^0.42"
+scikit-learn = "^1.4"
+sentence-transformers = "^2.6"
+rapidfuzz = "^3.6"
+pypinyin = "^0.48"
+pykakasi = "^2.2"
+tiktoken = "^0.5"
+openai = "^1.23"
+tenacity = "^8.3"
+more-itertools = "^10.2"
+aiofiles = "^23.2"
+pytest = "^8.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+
+[build-system]
+requires = ["poetry-core>=1.5"]
+build-backend = "poetry.core.masonry.api"
